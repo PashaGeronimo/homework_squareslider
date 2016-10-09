@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SliderSquare by Pasha Geronimo</title>
+    <meta charset="UTF-8">
+
+    <style>
+        :root {
+            --sizesq: 250px;
+        }
+        
+        body {
+            background: #999;
+        }
+        
+        #container {
+            position: relative;
+            margin: auto;
+            width: 100vw;
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+        }
+        
+        [id *=dv] {
+            position: relative;
+            margin: 3px;
+            height: var(--sizesq);
+            width: var(--sizesq);
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+        }
+        
+        #redsquare {
+            height: var(--sizesq);
+            width: var(--sizesq);
+            position: absolute;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border: 7px solid red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="slider_square.js"></script>
+
+
+    <div id="container">
+
+    </div>
+    <div id="redsquare"></div>
+
+    <script>
+        $('body').slider_square({
+            NumbPhotos : 15,
+        });
+    </script>
+
+</body>
+
+</html>
