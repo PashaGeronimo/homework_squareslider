@@ -3,4 +3,4 @@
 [http://pasha.kiev.ua/](http://pasha.kiev.ua/)
 
 
-[Запустить выполнение:](https://rawgit.com/PashaGeronimo/homework_slider-lenta/master/index.html)
+[Запустить выполнение:](https://rawgit.com/PashaGeronimo/homework_squareslider/master/index.html)
